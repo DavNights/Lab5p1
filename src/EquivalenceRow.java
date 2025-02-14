@@ -15,7 +15,8 @@ public class EquivalenceRow {
 
             // If val is in the range of the equivalence class, return the index of the equivalence class
             if (val >= equivalenceClass.getMin() && val <= equivalenceClass.getMax())
-                return classIndex;
+                // Ensure 1-indexed for proper output
+                return classIndex + 1;
         }
 
         // Val is not in any of the equivalence classes

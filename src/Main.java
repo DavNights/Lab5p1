@@ -19,7 +19,7 @@ public class Main {
 
         // Object for file operation, generate randomized test file
         FileOperations fileop = new FileOperations();
-        fileop.writeTestFile(equivalenceClasses);
+        fileop.writeTestFile(equivalenceClasses, testingInstance);
 
     }
 
